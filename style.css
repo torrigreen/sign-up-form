@@ -1,0 +1,85 @@
+@font-face {
+	font-family: davida;
+	src:
+		url(../fonts/davida_regular_webfont.woff2),
+		url(../fonts/davida_regular_webfont.woff);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+}
+
+/* SIDEBAR HERE */
+
+.sidebar {
+	flex: 0;
+	position: relative;
+}
+
+.sidebar > img {
+	height: 100%;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+	top: 16rem;
+  background: #00000099;
+  color: #ffffff;
+  width: 100%;
+}
+
+.banner > img {
+	height: 8rem;
+}
+
+.banner > h1 {
+	font-size: 4rem;
+}
+
+.credits {
+	position: absolute;
+	bottom: 0px;
+	background: #00000033;
+	width: 100%;
+}
+
+.credits, .credits a {
+	text-align: center;
+	color: #ffffff;
+}
+
+/* MAIN HERE */
+
+.main {
+	flex: auto;
+	display: flex;
+	flex-flow: column;
+}
+
+.main-text, .main-submission {
+	background-color: #f3f3f3;
+	flex: auto;
+}
+
+form {
+	background-color: #fdfdfd;
+	flex: auto;
+}
