@@ -1,0 +1,82 @@
+/* use more intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* remove default margins */
+* {
+  margin: 0;
+}
+
+/* change apparent rem size to 10px by default */
+:root {
+  font-size: 62.5%;
+}
+
+/* improve consistency of default fonts,
+   prevent font size adjust after orientation change in iOS,
+   more readable tab size */
+html {
+	font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+    'Segoe UI Symbol';
+	-webkit-text-size-adjust: 100%;
+	tab-size: 4;
+}
+
+/* more accessible line-height,
+   improve text rendering,
+   set body default font back to 16px */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+}
+
+/* ensure media shrinks into container */
+img, picture, video, canvas, svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* remove default heading styles */
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* restore heading defaults within '.article' */
+.article :where(h1, h2, h3, h4, h5) {
+  all: revert;
+}
+
+/* remove list styling without removing safari voiceover */
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}

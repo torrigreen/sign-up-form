@@ -1,0 +1,33 @@
+@import '/reset.css';
+
+@font-face {
+	font-family: norse;
+	src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+	display: flex;
+	background-color: #F9FAFB;
+}
+
+.sidebar {
+	flex: 1;
+}
+
+.main-content {
+	flex: 3;
+}
+
+.form-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-row	{
+	display: flex;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+}
