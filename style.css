@@ -16,6 +16,22 @@ body {
 
 .main-content {
 	flex: 3;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form-header {
+	width: 80%;
+	font-size: 2rem;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.form-header p {
+	margin-bottom: 20px;
 }
 
 .form-content {
