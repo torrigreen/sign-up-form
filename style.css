@@ -108,6 +108,21 @@ body {
 	margin-left: 60px;
 }
 
+.form-control input {
+	border: 1px solid #e5e7eb;
+	border-radius: 6px;
+}
+
+.form-control input:user-invalid {
+	border-color: red;
+}
+
+.form-control input:focus {
+	outline: none;
+	border-color: blue;
+	box-shadow: 1px 3px 3px #E0E0E0;
+}
+
 .form-footer {
 	padding-left: 40px;
 }
