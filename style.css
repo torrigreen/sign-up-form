@@ -1,8 +1,8 @@
-@import './reset.css';
+@import 'reset.css';
 
 @font-face {
 	font-family: norse;
-	src: url(/fonts/Norse-Bold.otf);
+	src: url(fonts/Norse-Bold.otf);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 .sidebar {
 	flex: 0 0 33vw;
-	background: url(./images/halie-west-25xggax4bSA-unsplash.jpg) center/cover;
+	background: url(images/halie-west-25xggax4bSA-unsplash.jpg) center/cover;
 	position: relative;
 }
 
